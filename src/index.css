@@ -5,9 +5,263 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+ color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.github {
+  width: 50px;  /* Set equal width and height */
+  height: 50px;
+  background-color: #3498db; /* Button color */
+  border: none; 
+  border-radius: 50%; /* Makes it circular */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.linkdin {
+  width: 50px;  /* Set equal width and height */
+  height: 50px;
+  background-color: #3498db; /* Button color */
+  border: none; 
+  border-radius: 50%; /* Makes it circular */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.email {
+  width: 50px;  /* Set equal width and height */
+  height: 50px;
+  background-color: #3498db; /* Button color */
+  border: none; 
+  border-radius: 50%; /* Makes it circular */
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 80%;
+  max-width: 300px; /* Adjust size */
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.social-btn:hover {
+  background-color: #007bff;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black; /* Matches your theme */
+  color: white;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 350px;  /* Reduce width */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: contain;
+  filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.2)); /* Soft glow effect */
+  animation: fadeInUp 1s ease-in-out; /* Smooth fade-in */
+}
+
+/* If the image still looks too tall, limit the max height */
+@media (min-width: 768px) {
+  .profile-img {
+    max-height: 450px;  /* Adjust height as needed */
+  }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #007bff;
+}
+
+.skills-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #111; /* Dark background */
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skill-card i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #222;
+  color: white;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 300px;
+  background: #333;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-info {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin: 10px;
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover {
+  color: #fff;
+}
+
+.project-links i {
+  margin-right: 5px;
+}
+
+
+h2 {
+  color: #00ff99;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
