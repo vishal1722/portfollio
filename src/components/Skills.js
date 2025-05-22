@@ -1,8 +1,6 @@
 import React from "react";
 
-
 export default function Skills() {
-  // Skills Data
   const skills = [
     { name: "HTML", icon: "fa-html5", color: "#E34F26" },
     { name: "CSS", icon: "fa-css3-alt", color: "#1572B6" },
@@ -15,16 +13,21 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills-section">
-      <h2 className="section-title">My Skills</h2>
-      <div className="skills-container">
+    <div className="container py-5 text-white" id="skills">
+      <h2 className="text-center mb-5 fw-bold">My Skills</h2>
+      <div className="row g-4 justify-content-center">
         {skills.map((skill, index) => (
-          <div key={index} className="skill-card">
-            <i className={`fab ${skill.icon}`} style={{ color: skill.color }}></i>
-            <p>{skill.name}</p>
+          <div key={index} className="col-6 col-sm-4 col-md-3 text-center">
+            <div className="p-3 border border-secondary rounded bg-dark h-100 shadow-sm">
+              <i
+                className={`fab ${skill.icon} fa-3x mb-2`}
+                style={{ color: skill.color }}
+              ></i>
+              <p className="mt-2 fw-medium">{skill.name}</p>
+            </div>
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
